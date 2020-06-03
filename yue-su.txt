@@ -137,5 +137,15 @@ Stretch Questions
        An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+       By using max-width or min-width.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+       Block-level: <div>, <nav>, <section>
+       inline-level: <a>, <img>, <span>
+        
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+       The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+       By default, the box model dose not include padding and border in an element's total width and height.
+       The "fix" of this issue is to set box-sizing property to border-box, which allow us to include the padding and border in an element's total width and height.
+
+       * { box-sizing: border-box;} 
